@@ -26,7 +26,8 @@
 }
 
 - (IBAction)sendSMS:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms://%@", self.smsNumberTextField.text]]];
+    //[sms:]or[sms://]
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms:%@", self.smsNumberTextField.text]]];
 }
 
 /*

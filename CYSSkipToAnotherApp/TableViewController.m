@@ -46,6 +46,27 @@
                                 };
 
 //[[UIApplicationsharedApplication] openURL:[NSURL URLWithString:@”remote://fff”]];
+/*
+ FaceTime👇
+ facetime://user@example.com
+ facetime-audio://user@example.com
+ 
+ Map👇
+ http://maps.apple.com/?q=Mexican+Restaurant
+ http://maps.apple.com/?q=Mexican+Restaurant&sll=50.894967,4.341626&z=10&t=s
+ http://maps.apple.com/?saddr=Cupertino&daddr=San+Francisco
+ http://maps.apple.com/?saddr=San+Jose&daddr=San+Francisco&dirflg=r
+ http://maps.apple.com/?daddr=San+Francisco&dirflg=d&t=h
+ http://maps.apple.com/?ll=50.894967,4.341626
+ http://maps.apple.com/?address=1,Infinite+Loop,Cupertino,California
+ 
+ iTunes👇
+ http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=156093464&id=156093462&s=143441
+ 
+ YouTube Links👇
+ http://www.youtube.com/watch?v=VIDEO_IDENTIFIER
+ http://www.youtube.com/v/VIDEO_IDENTIFIER
+ */
 
 @interface TableViewController ()
 

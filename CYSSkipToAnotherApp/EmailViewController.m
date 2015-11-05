@@ -27,7 +27,21 @@
 }
 
 - (IBAction)sendEmail:(UIButton *)sender {
-    NSString *urlStr = [NSString stringWithFormat:@"mailto://%@@%@", self.addressTextField.text, self.suffixTextField.text];
+    //  不用mailto://  也是一样的。  不同邮件地址用 & 隔开
+//    NSString *urlStr = [NSString stringWithFormat:@"mailto://%@@%@", self.addressTextField.text, self.suffixTextField.text];
+    NSString *urlStr = [NSString stringWithFormat:@"mailto:%@@%@", self.addressTextField.text, self.suffixTextField.text];
+//    NSString *urlStr = @"mailto:foo@example.com?to=232323@qq.com&to=251622@163.com&cc=bar@example.com&subject=Greetings%20from%20Cupertino!&body=Wish%20you%20were%0D%0Ahere!";
+    /*
+     *  mailto:foo@example.com?to=232323@qq.com?to=251622@163.com&cc=bar@example.com&subject=Greetings%20from%20Cupertino!&body=Wish%20you%20were%0D%0Ahere! 的意思
+     *  mailto:[邮箱地址]后跟一个?以后的跟&
+     *  ?to=[其他收件人]
+     *  &to=[其他收件人]
+     *  &cc=[抄送人]
+     *  &subject=[主题]
+     *  &body=[内容]
+     *  %0D%0A 换行
+     *  %20    空格
+     */
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
 }
 

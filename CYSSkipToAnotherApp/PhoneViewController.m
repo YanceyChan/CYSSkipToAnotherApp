@@ -27,6 +27,7 @@
 
 - (IBAction)callTelePhone:(UIButton *)sender {
     if (![self isBlankString:self.phoneNumberTextField.text]) {
+        //[tel://]or [tel:]
         NSString *phoneNumber = [NSString stringWithFormat:@"tel://%@", self.phoneNumberTextField.text];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
     }else{

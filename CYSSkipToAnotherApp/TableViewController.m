@@ -45,19 +45,6 @@
                                 @"WI-FI":@"prefs:root=WIFI",\
                                 };
 
-//[[UIApplicationsharedApplication] openURL:[NSURLURLWithString:@”mailto://admin@hzlzh.com”]];
-//                                           
-//                                           
-//[[UIApplication sharedApplication] openURL:[NSURLURLWithString:@”tel://8008808888”]];
-//                                                                                       
-//                                                                                       
-//[[UIApplicationsharedApplication] openURL:[NSURL URLWithString:@”sms://800888”]];
-//                                                                                                                                  
-//                                                                                                                                  
-//                                                                                                                                  
-//[[UIApplicationsharedApplication] openURL:[NSURLURLWithString:@”http://www.hzlzh.com“]];
-//                                                                                                                                                                             
-//                                                                                                                                                                             
 //[[UIApplicationsharedApplication] openURL:[NSURL URLWithString:@”remote://fff”]];
 
 @interface TableViewController ()

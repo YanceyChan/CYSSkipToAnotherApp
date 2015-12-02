@@ -1213,14 +1213,14 @@
                                 <state key="normal" title="微信"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="dDf-bY-ByD"/>
                                         <exclude reference="bob-LH-tTW"/>
+                                        <exclude reference="dDf-bY-ByD"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="dDf-bY-ByD"/>
                                         <include reference="bob-LH-tTW"/>
+                                        <include reference="dDf-bY-ByD"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1241,10 +1241,10 @@
                                 <exclude reference="4Tp-lV-7cb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="aMU-sf-nnr"/>
-                                <exclude reference="qVg-C6-WTU"/>
                                 <exclude reference="HIh-fw-In2"/>
                                 <exclude reference="vMt-18-Tle"/>
+                                <exclude reference="aMU-sf-nnr"/>
+                                <exclude reference="qVg-C6-WTU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1253,10 +1253,10 @@
                                 <include reference="4Tp-lV-7cb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="aMU-sf-nnr"/>
-                                <include reference="qVg-C6-WTU"/>
                                 <include reference="HIh-fw-In2"/>
                                 <include reference="vMt-18-Tle"/>
+                                <include reference="aMU-sf-nnr"/>
+                                <include reference="qVg-C6-WTU"/>
                             </mask>
                         </variation>
                     </view>

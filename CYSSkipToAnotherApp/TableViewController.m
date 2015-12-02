@@ -66,7 +66,14 @@
  YouTube Links👇
  http://www.youtube.com/watch?v=VIDEO_IDENTIFIER
  http://www.youtube.com/v/VIDEO_IDENTIFIER
+ 
+ 
+ 昨晚一网友(说是在无限互联学习的)问：在iOS应用中如何直接跳转到AppStore里面?其实这个问题很简单，首先拿到你要跳转到的
+ AppStore地址(URL) 例如：https://itunes.apple.com/cn/app/jie-zou-da-shi/id493901993?mt=8åßßßßßß
+ 　　然后将 http:// 替换为 itms:// 或者 itms-apps://
  */
+
+
 
 @interface TableViewController ()
 

@@ -26,15 +26,18 @@
 }
 
 - (IBAction)callTelePhone:(UIButton *)sender {
-    if (![self isBlankString:self.phoneNumberTextField.text]) {
-        //[tel://]or [tel:]
-        NSString *phoneNumber = [NSString stringWithFormat:@"tel://%@", self.phoneNumberTextField.text];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
-    }else{
-        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"请输入电话号码" delegate:self cancelButtonTitle:@"就不写" otherButtonTitles:@"好的，么么哒", nil];
-        [alertView show];
-        
-    }
+//    if (![self isBlankString:self.phoneNumberTextField.text]) {
+//        //[tel://]or [tel:]
+//        NSString *phoneNumber = [NSString stringWithFormat:@"tel://%@", self.phoneNumberTextField.text];
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+//    }else{
+//        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"请输入电话号码" delegate:self cancelButtonTitle:@"就不写" otherButtonTitles:@"好的，么么哒", nil];
+//        [alertView show];
+//    }
+    
+    NSString *phoneNumber = [NSString stringWithFormat:@"tel://13601111111"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+    
 }
 
 - (BOOL) isBlankString:(NSString *)string {

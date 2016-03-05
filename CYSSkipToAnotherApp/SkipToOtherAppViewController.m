@@ -54,10 +54,10 @@
              return NO;
              */
             //myapp12345 为对应的app的url，要再url后再加“:”才能成功跳转
-            NSString *str = @"myapp12345://name:chen&secret:123456&";
+//            NSString *str = @"myapp12345://name:chen&secret:123456&";
             //在网络开发中， 如果请求的url包含中文 空格等一些特殊的字符， url必须进行转义后才能请求成功。
-            NSURL *url = [NSURL URLWithString:[str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-            [[UIApplication sharedApplication] openURL:url];
+//            NSURL *url = [NSURL URLWithString:[str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+//            [[UIApplication sharedApplication] openURL:url];
             
             
             //特殊情况没转码可以试试以下代码
@@ -68,6 +68,9 @@
              CFSTR("!*'();:@&=+$,/?%#[]"),
              kCFStringEncodingUTF8);
              */
+            [self openAppUrl:@"ETicketxxx"];
+//            [self openAppUrl:@"mymobileportal"];
+            
         }
             break;
         case 2:{
@@ -96,5 +99,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void)openAppUrl:(NSString *)urlString {
+    if (![urlString hasSuffix:@":"]) {
+        urlString = [urlString stringByAppendingString:@":"];
+    }
+//    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:urlString]]) {
+//        if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]]) {
+//            NSLog(@"成功打开");
+//        } else {
+//            NSLog(@"打开失败");
+//        }
+//    }else{
+//        NSLog(@"不能打开");
+//    }
+    if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]]) {
+        NSLog(@"成功打开");
+    } else {
+        NSLog(@"打开失败");
+    }
+}
 
 @end

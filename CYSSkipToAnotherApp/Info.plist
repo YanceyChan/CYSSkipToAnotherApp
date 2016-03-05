@@ -40,5 +40,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mymobileportal</string>
+		<string>ETicketxxx</string>
+		<string>wbx</string>
+		<string>ciscojabber</string>
+		<string>com.amway.oa.mlearing</string>
+		<string>amwayhub</string>
+		<string>shumagangipadvzone</string>
+		<string>shumagangiphonevzone</string>
+	</array>
 </dict>
 </plist>
